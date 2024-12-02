@@ -1,0 +1,71 @@
+
+#******************** Settings ************************
+
+*** Settings ***
+Documentation	Issue Test scenario. CRUD Operation: Create, Read, Update, Delete
+
+# TODO: Write Precondition and Postcondition, Tags 
+
+Pre Condition	Project must have bene created by the user before 
+Post Condition	-
+Tags	Issues, CRUD, Project
+
+#******************* Common Variables ********************
+
+
+*** Variables ***
+
+# NOTE: Please Remove your login credential before uploading Assignments
+
+# TODO: Write Issue creation field variables, Updated name of the issue
+
+https://gitlab.com/{"accountname"}/{"projectname"}#
+
+Issue name = new issue
+Updated issue name = issue
+Second issue name = issue
+
+
+#******************** Test Cases *************************
+
+*** Test Case ***
+
+# TODO: Write Positive Test Cases and Test Process steps
+
+# Positive Test examples are below write test process steps for each below test case
+
+
+Create issue
+	- Open premade project
+	- Select issues from the sidebar
+	- Select new issue
+	- Name issue
+	- Select create issue
+	- Issue created
+
+Update name of issue
+	- Select the same project
+	- Select issues from the sidebar
+	- Select made issue
+	- Click edit on the top of the page
+	- Update the title field
+	- Select save changes
+	- Title updated
+	
+
+Create second issue with previous updated name
+	- Open project
+	- Select issues from the sidebar
+	- Select new issue
+	- Name it the same as the previous issues updated name
+	- Select create issue
+	- Issue created
+    
+
+Delete first issue
+	- Open project
+	- Select issues from the sidebar
+	- Select the first one
+	- Click on the three dots and select delete issue
+	- Confirm delete issue
+	- Issue was successfully deleted
