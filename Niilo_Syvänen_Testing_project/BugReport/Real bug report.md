@@ -17,7 +17,7 @@ The options title should be "Create blank project"
      
 ## Relevant logs and/or screenshots
 
-![alt text](image.png) here is the image and also the code found if image inaccessible "<h3 class="gl-text-size-h2 gl-text-inherit"> Create black project </h3>"
+![alt text](image.png) here is the image and also the code found if image inaccessible "´´<h3 class="gl-text-size-h2 gl-text-inherit"> Create black project </h3>´´"
 
 ## Possible fixes
 
